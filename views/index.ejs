@@ -96,7 +96,7 @@
             <div class="container">
               <h2 class="animated fadeInDown">Welcome to <span>SEJ-HUB</span></h2>
               <p class="animated fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-              <a href="#" class="btn-get-started animated fadeInUp scrollto">Register</a>
+              <a href="/form" class="btn-get-started animated fadeInUp scrollto">Register</a>
             </div>
           </div>
         </div>
@@ -107,7 +107,7 @@
             <div class="container">
               <h2 class="animated fadeInDown"><code> Kids can Code </code></h2>
               <p class="animated fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-              <a href="#about" class="btn-get-started animated fadeInUp scrollto">Register</a>
+              <a href="/form" class="btn-get-started animated fadeInUp scrollto">Register</a>
             </div>
           </div>
         </div>
@@ -118,7 +118,7 @@
             <div class="container">
               <h2 class="animated fadeInDown">Kids  Coding BootCamp</h2>
               <p class="animated fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-              <a href="#about" class="btn-get-started animated fadeInUp scrollto">Register</a>
+              <a href="/form" class="btn-get-started animated fadeInUp scrollto">Register</a>
             </div>
           </div>
         </div>
@@ -142,40 +142,8 @@
 
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
-      <div class="container-fluid">
-
-        <div class="row justify-content-center">
-          <div class="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items-stretch">
-            <!-- <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a> -->
-            <img src="assets/img/slide/slide-12.jpg" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-xl-5 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
-            <h3>Enim quis est voluptatibus aliquid consequatur fugiat</h3>
-            <p>Esse voluptas cumque vel exercitationem. Reiciendis est hic accusamus. Non ipsam et sed minima temporibus laudantium. Soluta voluptate sed facere corporis dolores excepturi. Libero laboriosam sint et id nulla tenetur. Suscipit aut voluptate.</p>
-
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-fingerprint"></i></div>
-              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-            </div>
-
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-gift"></i></div>
-              <h4 class="title"><a href="">Nemo Enim</a></h4>
-              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
-            </div>
-
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-atom"></i></div>
-              <h4 class="title"><a href="">Dine Pad</a></h4>
-              <p class="description">Explicabo est voluptatum asperiores consequatur magnam. Et veritatis odit. Sunt aut deserunt minus aut eligendi omnis</p>
-            </div>
-
-          </div>
-        </div>
-
-      </div>
+     
+      
     </section><!-- End About Section -->
 
     <!-- ======= Skills Section ======= -->
@@ -494,24 +462,41 @@
       </div>
     </section><!-- End Portfolio Section -->
     <section class="container"><!-- Registration form-->
+      <h1> KIDs Registration Form</h1>
+      <h2>All Parent should fill the form accurately as details will be collected for certification on course completion</h2>
       <form>
         <div class="form-row">
-          <div class="form-group col-md-6">
-            <label for="inputEmail4">Email</label>
-            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+          <div class="form-group col-md-4">
+            <label for="familyname">Family Name</label>
+            <input type="text" class="form-control" id="familyname" placeholder="Family Name">
           </div>
-          <div class="form-group col-md-6">
-            <label for="inputPassword4">Password</label>
-            <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+          <div class="form-group col-md-4">
+            <label for="inputPassword4">Contact number</label>
+            <input type="text" class="form-control" id="contactnumber" placeholder="+234..">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputPassword4">email</label>
+            <input type="email" class="form-control required" id="contactnumber" placeholder="email">
           </div>
         </div>
-        <div class="form-group">
-          <label for="inputAddress">Address</label>
-          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-        </div>
-        <div class="form-group">
-          <label for="inputAddress2">Address 2</label>
-          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+        
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <label for="inputState">Number of Participant</label>
+            <select id="inputState" class="form-control">
+              <option selected>Kids & Teens</option>
+              <option>One</option>
+              <option>Two</option>
+            </select>
+          </div>
+          <div class="form-group col-md-4">
+            <label for="participant">Participant </label>
+            <input type="text" class="form-control required" id="participant">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="participant">Participant 2</label>
+            <input type="text" class="form-control" id="participant">
+          </div>
         </div>
         <div class="form-row">
           <div class="form-group col-md-6">
@@ -534,14 +519,14 @@
           <div class="form-check">
             <input class="form-check-input" type="checkbox" id="gridCheck">
             <label class="form-check-label" for="gridCheck">
-              Check me out
+              Check me if you have a system
             </label>
           </div>
         </div>
-        <button type="submit" class="btn btn-primary">Sign in</button>
+        <button type="submit" class="btn btn-primary">Submit Form</button>
       </form>
     </section><!--End Registration form-->
-
+    
     <!-- ======= Testimonials Section ======= -->
     <section id="testimonials" class="testimonials section-bg">
       <div class="container-fluid">
@@ -654,9 +639,9 @@
 
         <div class="row justify-content-center">
           <div class="col-xl-10">
-            <div class="row">
+            <div class="row container justify-content-center">
 
-              <div class="col-xl-3 col-lg-4 col-md-6">
+              <div class="col-xl-3 col-lg-4 col-md-6 mr-auto">
                 <div class="member">
                   <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
                   <div class="member-info">
@@ -674,7 +659,7 @@
                 </div>
               </div> <!-- End Member Item -->
 
-              <div class="col-xl-3 col-lg-4 col-md-6" data-wow-delay="0.1s">
+              <div class="col-xl-3 col-lg-4 col-md-6 mr-auto" data-wow-delay="0.1s">
                 <div class="member">
                   <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
                   <div class="member-info">
@@ -692,7 +677,7 @@
                 </div>
               </div> <!-- End Member Item -->
 
-              <div class="col-xl-3 col-lg-4 col-md-6" data-wow-delay="0.2s">
+              <div class="col-xl-3 col-lg-4 col-md-6 mr-auto" data-wow-delay="0.2s">
                 <div class="member">
                   <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
                   <div class="member-info">
@@ -740,17 +725,17 @@
                   <div class="col-md-6 info d-flex flex-column align-items-stretch">
                     <i class="bx bx-map"></i>
                     <h4>Address</h4>
-                    <p>A108 Adam Street,<br>New York, NY 535022</p>
+                    <p>Rail way quaters,<br>Lagos, Yaba</p>
                   </div>
                   <div class="col-md-6 info d-flex flex-column align-items-stretch">
                     <i class="bx bx-phone"></i>
                     <h4>Call Us</h4>
-                    <p>+1 5589 55488 55<br>+1 5589 22548 64</p>
+                    <p>+234 70 898 34 909<br>+234 09 546 48 604</p>
                   </div>
                   <div class="col-md-6 info d-flex flex-column align-items-stretch">
                     <i class="bx bx-envelope"></i>
                     <h4>Email Us</h4>
-                    <p>contact@example.com<br>info@example.com</p>
+                    <p>contact@sejhub.com<br>info@sejhub.com</p>
                   </div>
                   <div class="col-md-6 info d-flex flex-column align-items-stretch">
                     <i class="bx bx-time-five"></i>
@@ -812,7 +797,7 @@
         <div class="row">
           <div class="col-lg-6">
             <h4>Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <p>Kindly add your email address for update to our latest Lessons and Tutorials</p>
           </div>
           <div class="col-lg-6">
             <form action="" method="post">
@@ -854,18 +839,18 @@
               <div class="col-lg-3 col-md-6 footer-contact">
                 <h4>Contact Us</h4>
                 <p>
-                  A108 Adam Street <br>
-                  New York, NY 535022<br>
-                  United States <br><br>
-                  <strong>Phone:</strong> +1 5589 55488 55<br>
-                  <strong>Email:</strong> info@example.com<br>
+                  Rail way quaters <br>
+                 Yaba , Block 40<br>
+                  Nigeria <br><br>
+                  <strong>Phone:</strong> +234 70 879 56 768<br>
+                  <strong>Email:</strong> info@esejhub.com<br>
                 </p>
 
               </div>
 
               <div class="col-lg-3 col-md-6 footer-info">
-                <h3>About Hidayah</h3>
-                <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+                <h3>About SEJ-HUB</h3>
+                <p>SEJ-HUB is an online progam dedicated to provide coding and Graphics Classes to KIDs and Teens </p>
                 <div class="social-links mt-3">
                   <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
                   <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
@@ -883,14 +868,14 @@
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong><span>Hidayah</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span>ClusterTraingle</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/hidayah-free-simple-html-template-for-corporate/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        Designed by <a href="https://sejhub.com/">SejHub</a>
       </div>
     </div>
   </footer><!-- End Footer -->
