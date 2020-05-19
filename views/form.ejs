@@ -50,11 +50,11 @@
           <nav class="nav-menu d-none d-lg-block">
             <ul>
               <li class="active"><a href="index.html">Home</a></li>
-              <li><a href="/a">About</a></li>
+              <!-- <li><a href="/a">About</a></li>
               <li><a href="#services">Services</a></li>
               <li><a href="#portfolio">Portfolio</a></li>
               <li><a href="#team">Team</a></li>
-              <li><a href="#team">Register</a></li>
+              <li><a href="#team">Register</a></li> -->
               <!-- <li class="drop-down"><a href="">Drop Down</a>
                 <ul>
                   <li><a href="#">Drop Down 1</a></li>
@@ -70,7 +70,7 @@
                   <li><a href="#">Drop Down 4</a></li>
                 </ul>
               </li> -->
-              <li><a href="#contact">Contact</a></li>
+              <!-- <li><a href="#contact">Contact</a></li> -->
 
             </ul>
           </nav><!-- .nav-menu -->
@@ -80,28 +80,31 @@
     </div>
   </header><!-- End Header -->
         <section class="container"><!-- Registration form-->
+          <h5 style="color: green;"> <%= sucess %> </h5>
+          <h5 style="color: red;"> <%= error %> </h5>
+
             <h1> KIDs Registration Form</h1>
             <h2>All Parent should fill the form accurately as details will be collected for certification on course completion</h2>
-            <form>
-              <div class="form-row">
+            <form method="POST" action="/form" >
+              <div class="form-row"></div>
                 <div class="form-group col-md-4">
                   <label for="familyname">Family Name</label>
-                  <input type="text" class="form-control" id="familyname" placeholder="Family Name">
+                  <input type="text" name = "familyname" class="form-control" id="familyname" placeholder="Family Name">
                 </div>
                 <div class="form-group col-md-4">
                   <label for="inputPassword4">Contact number</label>
-                  <input type="text" class="form-control" id="contactnumber" placeholder="+234..">
+                  <input type="text" name="contactnumber" class="form-control" id="contactnumber" placeholder="+234..">
                 </div>
                 <div class="form-group col-md-4">
                   <label for="inputPassword4">email</label>
-                  <input type="email" class="form-control required" id="contactnumber" placeholder="email">
+                  <input type="email" name="email" class="form-control required" id="contactnumber" placeholder="email">
                 </div>
               </div>
               
               <div class="form-row">
                 <div class="form-group col-md-4">
                   <label for="inputState">Number of Participant</label>
-                  <select id="inputState" class="form-control">
+                  <select id="inputState" name ="kidnumber"class="form-control">
                     <option selected>Kids & Teens</option>
                     <option>One</option>
                     <option>Two</option>
@@ -109,11 +112,11 @@
                 </div>
                 <div class="form-group col-md-4">
                   <label for="participant">Participant </label>
-                  <input type="text" class="form-control required" id="participant">
+                  <input type="text" name="partname1"class="form-control required" id="participant">
                 </div>
                 <div class="form-group col-md-4">
                   <label for="participant">Participant 2</label>
-                  <input type="text" class="form-control" id="participant">
+                  <input type="text" name="partname2"class="form-control" id="participant">
                 </div>
               </div>
               <div class="form-row">
@@ -123,25 +126,25 @@
                 </div>
                 <div class="form-group col-md-4">
                   <label for="inputState">State</label>
-                  <select id="inputState" class="form-control">
+                  <select id="inputState" name="state" class="form-control">
                     <option selected>Choose...</option>
                     <option>...</option>
                   </select>
                 </div>
                 <div class="form-group col-md-2">
                   <label for="inputZip">Zip</label>
-                  <input type="text" class="form-control" id="inputZip">
+                  <input type="text" name="zip" class="form-control" id="inputZip">
                 </div>
               </div>
               <div class="form-group">
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="gridCheck">
+                  <input class="form-check-input" name ="system" type="checkbox" id="gridCheck">
                   <label class="form-check-label" for="gridCheck">
                     Check me if you have a system
                   </label>
                 </div>
               </div>
-              <button type="submit" class="btn btn-primary">Submit Form</button>
+              <button type="submit" name="submit"class="btn btn-primary">Submit Form</button>
             </form>
           </section><!--End Registration form-->
    <!-- ======= Footer ======= -->
