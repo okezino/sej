@@ -45,11 +45,12 @@
 
           <!-- <h1 class="logo mr-auto"><a href="index.html">Hidayah</a></h1>
           Uncomment below if you prefer to use an image logo -->
-          <a href="/" class="logo mr-auto"><img src="assets/img/logo.jpg" alt="" class="img-fluid"></a>
+
+          <a href="/" class="logo mr-auto"><img src="assets/img/about/logo.jpg" alt="" class="img-fluid"></a>
 
           <nav class="nav-menu d-none d-lg-block">
             <ul>
-              <li class="active"><a href="index.html">Home</a></li>
+              <li class="active"><a href="/">Home</a></li>
               <!-- <li><a href="/a">About</a></li>
               <li><a href="#services">Services</a></li>
               <li><a href="#portfolio">Portfolio</a></li>
@@ -79,29 +80,29 @@
       </div>
     </div>
   </header><!-- End Header -->
-        <section class="container"><!-- Registration form-->
+        <section class="container section-bg"><!-- Registration form-->
           <h5 style="color: green;"> <%= sucess %> </h5>
           <h5 style="color: red;"> <%= error %> </h5>
 
-            <h1> KIDs Registration Form</h1>
-            <h2>All Parent should fill the form accurately as details will be collected for certification on course completion</h2>
+            <h3> KIDs Registration Form</h3>
+            <p>All Parent should fill the form accurately as details will be collected for certification on course completion</p>
             <form method="POST" action="/form" >
-              <div class="form-row"></div>
-                <div class="form-group col-md-4">
+              <div class="fort">
+                <div class="form-group col-md-8">
                   <label for="familyname">Family Name</label>
                   <input type="text" name = "familyname" class="form-control" id="familyname" placeholder="Family Name">
                 </div>
-                <div class="form-group col-md-4">
+                <div class="form-group col-md-8">
                   <label for="inputPassword4">Contact number</label>
                   <input type="text" name="contactnumber" class="form-control" id="contactnumber" placeholder="+234..">
                 </div>
-                <div class="form-group col-md-4">
+                <div class="form-group col-md-8">
                   <label for="inputPassword4">email</label>
                   <input type="email" name="email" class="form-control required" id="contactnumber" placeholder="email">
                 </div>
-              </div>
               
-              <div class="form-row">
+              
+                  <div class="form-row">
                 <div class="form-group col-md-4">
                   <label for="inputState">Number of Participant</label>
                   <select id="inputState" name ="kidnumber"class="form-control">
@@ -119,7 +120,8 @@
                   <input type="text" name="partname2"class="form-control" id="participant">
                 </div>
               </div>
-              <div class="form-row">
+            
+               <div class="form-row">
                 <div class="form-group col-md-6">
                   <label for="inputCity">City</label>
                   <input type="text" class="form-control" id="inputCity">
@@ -145,6 +147,8 @@
                 </div>
               </div>
               <button type="submit" name="submit"class="btn btn-primary">Submit Form</button>
+            </div>
+                
             </form>
           </section><!--End Registration form-->
    <!-- ======= Footer ======= -->
